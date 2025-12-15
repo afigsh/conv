@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: "Arial, sans-serif";
+    background: #fafafa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #7d00ff; 
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu a {
+    margin: 0 5px;
+    color: #777;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: #7d00ff;
+}
+
+.login {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    padding: 0 10px;
+}
+
+.converter {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.block {
+    flex: 1 1 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.currency-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.currency-list div {
+    padding: 10px 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.currency-list div:hover {
+    border-color: #7d00ff;
+    color: #7d00ff;
+}
+
+.currency-list .active {
+    background: #7d00ff;
+    color: white;
+    border-color: #7d00ff;
+}
+
+.baby {
+    color: white;       
+    border: 2px solid #7d00ff; 
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: #7d00ff;
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .menu {
+        justify-content: flex-start;
+        gap: 5px;
+    }
+    .main-title {
+        font-size: 28px;
+    }
+    .converter {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .block {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-title {
+        font-size: 32px;
+    }
+    .converter {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-title {
+        font-size: 40px;
+    }
+    .converter {
+        flex-direction: row;
+        gap: 40px;
+    }
+}

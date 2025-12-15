@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valyuta Konverteri</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Bank</div>
+    <div class="baby">a</div>
+
+    <nav class="menu">
+        <a href="#">банк</a>
+        <a href="#">бизнес</a>
+        <a href="#">инвестиции</a>
+        <a href="#">страхование</a>
+        <a href="#">мобильный</a>
+        <a href="#">путешествия</a>
+        <a href="#">развлечения</a>
+    </nav>
+
+    <div class="login">Войти</div>
+</header>
+
+<h1 class="main-title">Конвертер валют онлайн</h1>
+
+<div class="converter">
+
+    <div class="block">
+        <label>У меня есть</label>
+
+        <div class="currency-list" id="fromCurrency">
+            <div data-cur="RUB">RUB</div>
+            <div data-cur="USD">USD</div>
+            <div data-cur="EUR">EUR</div>
+            <div data-cur="GBP">GBP</div>
+        </div>
+
+        <input id="amountFrom" type="number">
+    </div>
+
+    <div class="block">
+        <label>Хочу обменять</label>
+
+        <div class="currency-list" id="toCurrency">
+            <div data-cur="USD">USD</div>
+            <div data-cur="RUB">RUB</div>
+            <div data-cur="EUR">EUR</div>
+            <div data-cur="GBP">GBP</div>
+        </div>
+
+        <input id="amountTo" type="number">
+    </div>
+
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>
